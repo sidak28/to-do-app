@@ -1,0 +1,16 @@
+<h3>Creation of To Do List using Component Interaction. </h3>
+<hr/>
+<mat-card>
+    <mat-form-field>
+      <input matInput placeholder="Enter title here..." type="text" [(ngModel)]="enteredTitle">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Enter content here..." rows="5" [(ngModel)]="enteredContent"></textarea>
+    </mat-form-field>
+    
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="checkValid()">Save Post</button>
+  </mat-card>
+  
